@@ -13,10 +13,6 @@ function login() {
 
     function onLogin() {
 
-
-
-
-
     }
     function basicAuth() {
         const auth = username;
@@ -26,16 +22,7 @@ function login() {
 
     }
 
-    async function fetchProtectedData(authString) {
-        const res = await fetch("/protected", {
-            method: "POST",
-            headers: {
-                'Authorization': authString
-            }
-        });
-        const data = await res.text();
-        return data;
-    }
+    
     if (loggedIn == false) {
         return (
             <div>
