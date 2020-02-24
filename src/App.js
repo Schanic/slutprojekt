@@ -1,16 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Login} from './login';
+import {Search} from './search';
+import {Content} from './content';
 import './App.css';
 
 function App() {
+  const [isloggedin, setisloggedin] = React.useState(false);
+
+  function onlogin(value) {
+    setisloggedin(value);
+
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+      
+      <div class="grid-container">
+        <Search></Search>
+      </div>
+
+        <div class="header">
+          <div id="login"> <Login onlogin={onlogin}></Login></div>
+          <Login></Login>
+      </div>
+
+        <div class="content">
+          <Content></Content>
+     </div>
+
+      
     </div>
+
+
   );
 }
-
-export default App;
