@@ -1,19 +1,19 @@
+import React from 'react';
 
-
-function Login() {
-
+export function Login() {
+/*
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-
-    function signup(loggedIn) {
+*/
+    function signup(value) {
         const [loggedIn, setLoggedIn] = React.useState();
 
 
     }
-
+    
     function onLogin() {
 
-    }
+    }/*
     function basicAuth() {
         const auth = username;
         const userValue = authString.username;
@@ -22,8 +22,8 @@ function Login() {
 
     }
 
-    
-    if (loggedIn == false) {
+    */
+    /*if (loggedIn == false) { */
         return (
             <div>
 
@@ -31,7 +31,5 @@ function Login() {
         )
 
 
-    } else {
-
-    }
+    
 }

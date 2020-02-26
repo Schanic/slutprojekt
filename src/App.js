@@ -4,7 +4,7 @@ import {Search} from './search';
 import {Content} from './content';
 import './App.css';
 
-function App() {
+export default function App() {
   const [isloggedin, setisloggedin] = React.useState(false);
 
   function onlogin(value) {
