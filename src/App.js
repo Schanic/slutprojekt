@@ -22,7 +22,7 @@ export default function App() {
       </div>
 
         <div class="header">
-          <div id="login"> <Login onlogin={onlogin}></Login></div>
+          <div id="login"> <Login onlogin={isloggedin}></Login></div>
           <Login></Login>
       </div>
 
