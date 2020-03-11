@@ -1,35 +1,39 @@
 import React from 'react';
 
-export function Login(loggedIn) {
+export function Login(props) {
+    const [loggedIn, setLoggedIn] = React.useState(false);
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    function signup(value) {
-        const [loggedIn, setLoggedIn] = React.useState();
-
-
+    function onLoginAccount() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        if (username === "j" && password === "j") {
+            setLoggedIn(true);
+            props.onLogin(true);
+        }
+        else {
+            setLoggedIn(false);
+            props.onLogin(false)
+        }
     }
 
-    function onLogin() {
-
+    function exitSession() {
+        setLoggedIn(false);
+        props.onlogin(false);
     }
-    function basicAuth(authString) {
-        //const auth = username;
-        const userValue = authString.username;
-        const passValue = authString.password;
+    
 
 
-    }
-
-
-    if (loggedIn == false) {
+    if (loggedIn === false) {
         return (
             <div>
-
+                <button onClick={onLoginAccount}> Log in</button>
             </div>
         )
 
 
+    } else {
+        return (
+            <button onClick={exitSession}></button>
+        )
     }
 }

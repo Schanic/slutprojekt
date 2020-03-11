@@ -1,6 +1,10 @@
 
 async function fetchProtectedData(authString) {
-    const res = await fetch("/SlutprojektBackend/userRes/Check", {
+    const res = await fetch("/SlutprojektBackend/resources/?????");
+    let data = await Response.json();
+    return data;
+
+    /*
         method: "POST",
         headers: {
             'Authorization': authString
@@ -10,7 +14,7 @@ async function fetchProtectedData(authString) {
             pass: password
             
         }
-    });
+    );*/
     const data = await res.text();
     return data;
 }

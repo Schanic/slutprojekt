@@ -9,7 +9,6 @@ export default function App() {
 
   function onlogin(value) {
     setisloggedin(value);
-
   }
 
 
@@ -17,16 +16,16 @@ export default function App() {
   return (
     <div className="App">
       
-      <div class="grid-container">
+      <div className="grid-container">
         <Search></Search>
       </div>
 
-        <div class="header">
-          <div id="login"> <Login onlogin={isloggedin}></Login></div>
-          <Login></Login>
+        <div className="header">
+          <div id="login"> <Login onlogin={onlogin}></Login></div>
+          
       </div>
 
-        <div class="content">
+        <div className="content">
           <Content></Content>
      </div>
 
