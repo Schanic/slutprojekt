@@ -1,6 +1,6 @@
 
 async function fetchProtectedData(authString) {
-    const res = await fetch("/SlutprojektBackend/resources/?????");
+    const res = await fetch(`/SlutprojektBackend/resources/recipe/wholeRecipe?id=${id}`);
     let data = await Response.json();
     return data;
 
@@ -15,6 +15,4 @@ async function fetchProtectedData(authString) {
             
         }
     );*/
-    const data = await res.text();
-    return data;
 }

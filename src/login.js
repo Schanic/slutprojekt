@@ -26,7 +26,7 @@ export function Login(props) {
     if (loggedIn === false) {
         return (
             <div>
-                <button onClick={onLoginAccount}> Log in</button>
+                <button onClick={onLoginAccount}> Log dwain</button>
             </div>
         )
 

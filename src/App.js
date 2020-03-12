@@ -2,6 +2,7 @@ import React from 'react';
 import {Login} from './login';
 import {Search} from './search';
 import {Content} from './content';
+import {DisplayAllRecipe} from './AllRecipesContent';
 import './App.css';
 
 export default function App() {
@@ -25,8 +26,8 @@ export default function App() {
           
       </div>
 
-        <div className="content">
-          <Content></Content>
+        <div className="container content">
+          <DisplayAllRecipe></DisplayAllRecipe>
      </div>
 
       
